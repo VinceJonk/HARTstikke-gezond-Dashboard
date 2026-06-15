@@ -204,4 +204,6 @@ Het CSV-bestand moet de volgende kolommen bevatten:
 | Bloedsuiker | 4,0 – 6,0 mmol/L | Diabetes Fonds |
 | Actieve minuten | 21 – 30 min/dag | RIVM Beweegrichtlijnen |
 
-## ---ENGLISH VERSION ---
+---
+
+## ENGLISH VERSION
