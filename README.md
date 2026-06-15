@@ -452,7 +452,7 @@ The CSV file must contain the following columns:
 | Measurements | Healthy value | Source |
 |---|---|---|
 | Cholesterol | < 5,0 mmol/L | Nederlande Hartstichting |
-| Bloodpressure (systolisch) | < 120 mmHg | WHO |
-| Bloodpressure (diastolisch) | < 80 mmHg | WHO |
+| Bloodpressure (systolic) | < 120 mmHg | WHO |
+| Bloodpressure (diastolic) | < 80 mmHg | WHO |
 | Blood Glucose | 4,0 – 6,0 mmol/L | Diabetes Fonds |
 | Active Minutes per Day | 21 – 30 min/day | RIVM Beweegrichtlijnen |
