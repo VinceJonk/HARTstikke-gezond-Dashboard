@@ -4,23 +4,103 @@ Streamlit-dashboard voor analyse van hartslag- en bewegingsdata. Visualiseert ac
 
 ---
 
-## Vereisten
-
-- Python 3.9 of hoger
-- De volgende mappen in de projectmap:
-  - `Bestanden/` — map met CSV-bestanden van de hartslagmeter
-  - `BuurtData/` — map met het bestand `anonieme_buurtbewoners_gezondheid.csv`
-
 ## Installatie
 
-```bash
-git clone https://github.com/jouw-gebruikersnaam/hartstikke-gezond.git
-cd hartstikke-gezond
-pip install -r requirements.txt
-streamlit run app.py
+Volg de stappen hieronder. Je hebt geen technische kennis nodig — doe het gewoon stap voor stap.
+
+---
+
+### Stap 1 — Download de projectbestanden
+
+Ga naar de GitHub-pagina van dit project en klik op de groene knop **Code**, dan op **Download ZIP**.
+
+Pak het ZIP-bestand uit op een plek die je makkelijk terugvindt, bijvoorbeeld je bureaublad. Je krijgt dan een map zoals `hartstikke-gezond-main`. Je mag de map hernoemen naar `hartstikke-gezond`.
+
+---
+
+### Stap 2 — Installeer Python
+
+Python is het programma waar het dashboard op draait. Controleer eerst of je het al hebt:
+
+**Windows:**
+1. Druk op de Windows-toets, typ `cmd` en open **Opdrachtprompt**.
+2. Typ `python --version` en druk op Enter.
+3. Zie je een versienummer zoals `Python 3.11.2`? Dan sla je deze stap over.
+4. Zie je een foutmelding? Ga dan naar [python.org/downloads](https://www.python.org/downloads/) en download de nieuwste versie.
+5. Voer het installatiebestand uit. **Belangrijk:** zet het vinkje aan bij _"Add Python to PATH"_ onderaan het installatiescherm, vóór je op Install klikt.
+
+**Mac:**
+1. Open de **Terminal** (zoek op "Terminal" via Spotlight met ⌘ + spatiebalk).
+2. Typ `python3 --version` en druk op Enter.
+3. Zie je een versienummer? Dan sla je deze stap over.
+4. Zie je een foutmelding? Ga naar [python.org/downloads](https://www.python.org/downloads/) en download de nieuwste versie voor Mac. Volg de installatie.
+
+---
+
+### Stap 3 — Zet de data op de juiste plek
+
+In de projectmap staan twee mappen waar je bestanden in moet zetten:
+
+**`Bestanden/`** — Zet hier je CSV-bestanden van de hartslagmeter in. Dit zijn de meetbestanden die je in het dashboard kunt selecteren.
+
+**`BuurtData/`** — Zet hier het bestand `anonieme_buurtbewoners_gezondheid.csv` in. Dit bestand bevat de gezondheidsgegevens per stadsdeel.
+
+De mappenstructuur ziet er dan zo uit:
+```
+hartstikke-gezond/
+├── app.py
+├── requirements.txt
+├── Bestanden/
+│   └── jouw-meting.csv
+└── BuurtData/
+    └── anonieme_buurtbewoners_gezondheid.csv
 ```
 
-Het dashboard opent automatisch in je browser op `http://localhost:8501`.
+---
+
+### Stap 4 — Installeer de benodigde onderdelen
+
+**Windows:**
+1. Open de map `hartstikke-gezond` in Verkenner.
+2. Klik in de adresbalk bovenaan, typ `cmd` en druk op Enter. Er opent een Opdrachtprompt in de juiste map.
+3. Typ het volgende en druk op Enter:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Wacht tot de installatie klaar is. Je ziet veel tekst voorbijkomen — dat is normaal.
+
+**Mac:**
+1. Open de **Terminal**.
+2. Typ `cd ` (met een spatie erna), sleep dan de map `hartstikke-gezond` vanuit Finder naar het Terminal-venster, en druk op Enter.
+3. Typ het volgende en druk op Enter:
+   ```
+   pip3 install -r requirements.txt
+   ```
+4. Wacht tot de installatie klaar is.
+
+---
+
+### Stap 5 — Start het dashboard
+
+**Windows:**
+Typ in diezelfde Opdrachtprompt:
+```
+streamlit run app.py
+```
+Druk op Enter.
+
+**Mac:**
+Typ in diezelfde Terminal:
+```
+streamlit run app.py
+```
+Druk op Enter.
+
+Het dashboard opent automatisch in je browser. Lukt dat niet, ga dan zelf naar `http://localhost:8501`.
+
+> De Opdrachtprompt of Terminal moet open blijven zolang je het dashboard gebruikt. Sluit je het venster, dan stopt het dashboard.
+
+---
 
 ---
 
