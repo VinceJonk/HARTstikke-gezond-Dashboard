@@ -203,3 +203,5 @@ Het CSV-bestand moet de volgende kolommen bevatten:
 | Bloeddruk (diastolisch) | < 80 mmHg | WHO |
 | Bloedsuiker | 4,0 – 6,0 mmol/L | Diabetes Fonds |
 | Actieve minuten | 21 – 30 min/dag | RIVM Beweegrichtlijnen |
+
+## ---ENGLISH VERSION ---
