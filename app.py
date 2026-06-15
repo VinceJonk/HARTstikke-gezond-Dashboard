@@ -218,7 +218,7 @@ def calculate_activity_per_window(
     n_blocks = len(ecg_signal_ds) // block
 
     max_hr = 220 - age
-    bpm_threshold = 0.6 * max_hr
+    bpm_threshold = 0.5 * max_hr
     movement_threshold = data_ds['Beweging'].quantile(movement_threshold_percentile / 100)
 
     windows = []
