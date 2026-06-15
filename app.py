@@ -264,7 +264,7 @@ def calculate_activity_per_window(
 
 
 @st.cache_data
-def compute_active_minutes(data, peaks, age, activity_window_data=None, threshold_pct=0.6, minute_window=60, min_continuous_minutes=10, enforce_uninterrupted=False):
+def compute_active_minutes(data, peaks, age, activity_window_data=None, threshold_pct=0.5, minute_window=60, min_continuous_minutes=10, enforce_uninterrupted=False):
     """
     Bereken actieve minuten.
     
