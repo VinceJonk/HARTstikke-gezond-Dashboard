@@ -206,4 +206,253 @@ Het CSV-bestand moet de volgende kolommen bevatten:
 
 ---
 
-## ENGLISH VERSION
+## ENGLISH VERSION 
+
+A Streamlit dashboard for analyzing heart rate and movement data. Visualizes active minutes per day based on Dutch physical activity guidelines, with an interactive map of Amsterdam districts and a neighborhood comparison of health measurements.
+
+---
+
+## Installation
+
+Follow the steps below. No technical knowledge is required — just follow them one by one.
+
+---
+
+### Step 1 — Download the project files
+
+Go to the project's GitHub page and click the green **Code** button, then select **Download ZIP**.
+
+Extract the ZIP file to an easy-to-find location, such as your desktop. You will get a folder named something like `hartstikke-gezond-main`. You may rename it to `hartstikke-gezond`.
+
+---
+
+### Step 2 — Install Python
+
+Python is the software that runs the dashboard. First, check whether it is already installed:
+
+#### Windows
+
+1. Press the Windows key, type `cmd`, and open **Command Prompt**.
+2. Type:
+
+   ```bash
+   python --version
+   ```
+
+3. Press Enter.
+4. If you see a version number such as `Python 3.11.2`, you can skip this step.
+5. If you see an error message, download Python from https://www.python.org/downloads/.
+6. Run the installer.
+
+> **Important:** Check the box **"Add Python to PATH"** before clicking Install.
+
+#### Mac
+
+1. Open **Terminal** (search for "Terminal" using Spotlight with ⌘ + Space).
+2. Type:
+
+   ```bash
+   python3 --version
+   ```
+
+3. Press Enter.
+4. If you see a version number, you can skip this step.
+5. If you see an error message, download Python from https://www.python.org/downloads/ and follow the installation instructions.
+
+---
+
+### Step 3 — Place the data files in the correct folders
+
+Inside the project folder, there are two folders where you need to place files:
+
+**`Bestanden/`**  
+Place your heart rate monitor CSV files here. These are the measurement files that can be selected in the dashboard.
+
+**`BuurtData/`**  
+Place the file `anonieme_buurtbewoners_gezondheid.csv` here. This file contains health data for each district.
+
+The folder structure should look like this:
+
+```text
+hartstikke-gezond/
+├── app.py
+├── requirements.txt
+├── Bestanden/
+│   └── jouw-meting.csv
+└── BuurtData/
+    └── anonieme_buurtbewoners_gezondheid.csv
+```
+
+---
+
+### Step 4 — Install the required packages
+
+#### Windows
+
+1. Open the `hartstikke-gezond` folder in File Explorer.
+2. Click the address bar, type `cmd`, and press Enter.
+3. A Command Prompt window will open in the correct folder.
+4. Run:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Wait for the installation to finish.
+
+#### Mac
+
+1. Open **Terminal**.
+2. Type `cd ` (including the space).
+3. Drag the `hartstikke-gezond` folder into the Terminal window and press Enter.
+4. Run:
+
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+
+5. Wait for the installation to finish.
+
+---
+
+### Step 5 — Start the dashboard
+
+#### Windows
+
+Run:
+
+```bash
+streamlit run app.py
+```
+
+#### Mac
+
+Run:
+
+```bash
+streamlit run app.py
+```
+
+The dashboard should open automatically in your browser.
+
+If it does not, open:
+
+```text
+http://localhost:8501
+```
+
+> The Command Prompt or Terminal window must remain open while using the dashboard. If you close it, the dashboard will stop running.
+
+---
+
+## How does the dashboard work?
+
+### Step 1 — Select a file
+
+In the **left sidebar**, you will see a list of available CSV files.
+
+Click the file you want to load. The dashboard processes the data automatically.
+
+> The CSV files are stored in the `Bestanden/` folder and contain heart rate measurements from a wearable sensor.
+
+---
+
+### Step 2 — Enter your age
+
+Enter your **age** in the sidebar.
+
+This is required to calculate when your heart rate is high enough to count as "active".
+
+> The dashboard uses the formula `220 - age` to estimate your maximum heart rate. A minute is considered active when your heart rate exceeds 60% of this maximum and movement is detected.
+
+---
+
+### Step 3 — View the graph
+
+The **Activity: BPM + Movement** graph shows your heart rate over the duration of the recording.
+
+- The **red line** represents your heart rate (BPM = beats per minute).
+- **Green shaded areas** indicate periods where movement was detected.
+
+The higher the red line and the more green areas you see, the more active you were during the recording.
+
+---
+
+### Step 4 — View your active minutes
+
+To the right of the graph, you will see the number of **active minutes** recorded.
+
+A minute counts as active when:
+
+- Your heart rate was above 60% of your estimated maximum heart rate.
+- Movement was detected.
+
+#### Optional setting: Continuous activity requirement
+
+In the sidebar, you can enable the **continuous activity rule**.
+
+When enabled, only uninterrupted periods of active movement lasting at least 10 minutes will count. This filters out short bursts of activity, such as briefly standing up from a chair.
+
+> Dutch physical activity guidelines recommend 21–30 minutes of moderate-intensity activity per day.
+
+---
+
+### Step 5 — Neighborhood comparison
+
+Below the graph, you will find a table showing average health values for each Amsterdam district.
+
+| Column | Meaning |
+|----------|----------|
+| **Cholesterol** | Amount of cholesterol in the blood (mmol/L). Lower is better. Healthy value: below 5.0. |
+| **Systolic** | Upper blood pressure value (mmHg). Lower is better. Healthy value: below 120. |
+| **Diastolic** | Lower blood pressure value (mmHg). Lower is better. Healthy value: below 80. |
+| **Blood Glucose** | Amount of glucose in the blood (mmol/L). Healthy range: between 4.0 and 6.0. |
+| **Active Minutes per Day** | Average number of active minutes per day in the district. |
+
+Each value is accompanied by a colored indicator:
+
+- 🟢 **Green** — within the healthy range
+- 🟡 **Yellow** — close to the limit
+- 🔴 **Red** — outside the healthy range
+
+Hover over a value to see a short explanation and a bar chart.
+
+---
+
+### Step 6 — Amsterdam map
+
+Click **📍 Go to map** at the bottom of the page to open the map view.
+
+The map colors Amsterdam districts based on their average active minutes per day:
+
+- 🔴 **Red** — fewer than 21 minutes per day (below the guideline)
+- 🔵 **Blue** — 21–30 minutes per day (meets the guideline)
+- 🟢 **Green** — more than 30 minutes per day (above the guideline)
+
+Below the map is a table containing the exact values for each district.
+
+Click **Back to dashboard** to return.
+
+---
+
+## CSV File Format
+
+The CSV file must contain the following columns:
+
+| Column | Description |
+|----------|----------|
+| `time` or `time_ms` | Timestamp in milliseconds |
+| `ECG` | Raw ECG signal value |
+| `accX`, `accY`, `accZ` | Accelerometer data from the motion sensor (X, Y, and Z axes) |
+
+---
+
+## Health values — reference standards
+
+| Measurements | Healthy value | Source |
+|---|---|---|
+| Cholesterol | < 5,0 mmol/L | Nederlande Hartstichting |
+| Bloodpressure (systolisch) | < 120 mmHg | WHO |
+| Bloodpressure (diastolisch) | < 80 mmHg | WHO |
+| Blood Glucose | 4,0 – 6,0 mmol/L | Diabetes Fonds |
+| Active Minutes per Day | 21 – 30 min/day | RIVM Beweegrichtlijnen |
