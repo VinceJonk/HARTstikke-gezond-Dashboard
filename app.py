@@ -218,7 +218,7 @@ def calculate_activity_per_window(
     n_blocks = len(ecg_signal_ds) // block
 
     max_hr = 220 - age
-    bpm_threshold = 0.5 * max_hr
+    bpm_threshold = 0.6 * max_hr
     movement_threshold = data_ds['Beweging'].quantile(movement_threshold_percentile / 100)
 
     windows = []
@@ -264,7 +264,7 @@ def calculate_activity_per_window(
 
 
 @st.cache_data
-def compute_active_minutes(data, peaks, age, activity_window_data=None, threshold_pct=0.5, minute_window=60, min_continuous_minutes=10, enforce_uninterrupted=False):
+def compute_active_minutes(data, peaks, age, activity_window_data=None, threshold_pct=0.6, minute_window=60, min_continuous_minutes=10, enforce_uninterrupted=False):
     """
     Bereken actieve minuten.
     
