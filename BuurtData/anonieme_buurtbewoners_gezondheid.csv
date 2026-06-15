@@ -1,101 +1,101 @@
-Naam,Buurt,Cholesterol_mmol_L,Bloeddruk_mmHg,Bloedsuiker_mmol_L,Actieve_minuten_per_dag
-Mika J.,Nieuw-West,4.8,121/79,5.2,26
-Wout d.,Noord,5.1,128/82,5.5,4
-Stef P.,Oost,4.3,118/76,4.9,23
-Michael L.,Westpoort,5.6,134/86,6.1,22
-Nynke H.,Oost,6,142/91,6.8,10
-Dina K.,West,4.7,124/80,5,23
-Esther O.,West,5.3,130/84,5.8,12
-Fenne D.,Noord,4.5,116/74,4.7,19
-Joey D.,Centrum,6.4,148/95,7.2,12
-Noortje F.,Oost,5,126/81,5.4,19
-Matthijs H.,Weesp,4.9,123/78,5.1,28
-Nadine J.,Noord,5.8,138/88,6.3,21
-Thom K.,Centrum,4.2,112/72,4.5,13
-Cornelis V.,Noord,5.4,132/85,5.9,27
-Janna J.,Oost,6.1,145/93,7,30
-Josephine C.,Zuidoost,4.6,120/77,4.8,7
-Yassin T.,Centrum,5.7,136/87,6.2,22
-Merle V.,Centrum,4.4,115/73,4.6,14
-Guus B.,Centrum,6.3,150/97,7.4,29
-Nynke d.,Weesp,5.2,129/83,5.6,22
-Joep D.,Centrum,4.8,122/79,5,25
-Isabel K.,Zuid,5.5,133/86,6,22
-Suus S.,Centrum,4.1,110/70,4.4,11
-Lizz d.,Centrum,5.9,140/90,6.5,1
-Jari L.,Weesp,4.7,119/76,4.9,27
-Jesse v.,Zuidoost,5.1,127/82,5.3,4
-Victoria H.,Zuidoost,6.2,147/94,7.1,4
-Lise V.,Oost,4.5,117/75,4.7,7
-Job R.,Weesp,5.6,135/87,6.1,26
-Isabel v.,Zuid,4.9,124/80,5.2,16
-Evelien M.,Weesp,6,143/92,6.9,26
-Lynn B.,Zuidoost,4.3,114/72,4.5,15
-Niels N.,Westpoort,5.3,131/84,5.7,29
-Naomi v.,Centrum,4.6,118/77,4.8,26
-Robin M.,Noord,6.5,152/98,7.5,11
-Rafael L.,Zuid,5,125/81,5.4,29
-Rosa S.,Zuid,4.8,121/78,5.1,13
-Maja S.,Nieuw-West,5.7,137/88,6.2,12
-Fedde M.,Nieuw-West,4.2,111/71,4.4,18
-Frederique v.,Centrum,6.1,146/93,7,3
-Tygo J.,Noord,5.4,132/85,5.8,17
-Seth W.,Westpoort,4.7,120/76,4.9,18
-Muhammed K.,Zuidoost,5.8,139/89,6.4,20
-Colin v.,Zuid,4.4,116/74,4.6,1
-Brent O.,Centrum,6.3,149/96,7.3,16
-Collin v.,Centrum,5.1,128/82,5.5,15
-Yusuf H.,Nieuw-West,4.9,123/79,5.2,7
-Joep L.,Oost,5.5,134/86,6,3
-Lise V.,Oost,4.1,109/69,4.3,17
-Dean M.,Oost,6,141/91,6.7,15
-Boaz S.,Noord,,,,3
-Benthe H.,Westpoort,,,,30
-Kai v.,Centrum,,,,9
-Bilal V.,Weesp,,,,27
-Selena M.,Zuidoost,,,,26
-Silke J.,Centrum,,,,8
-Liv H.,Noord,,,,11
-Laurens H.,Zuidoost,,,,26
-Stef B.,Centrum,,,,9
-Lisanne G.,Zuid,,,,1
-Joël d.,Nieuw-West,,,,20
-Jack v.,Nieuw-West,,,,22
-Cato B.,Westpoort,,,,30
-Floor K.,Centrum,,,,8
-Luca L.,Zuid,,,,43
-Dirk W.,Noord,,,,19
-Melissa L.,Zuidoost,,,,57
-Quinty A.,Centrum,,,,50
-Elisabeth v.,Weesp,,,,6
-Merel W.,Westpoort,,,,29
-Nadine R.,Noord,,,,2
-Lise v.,Noord,,,,17
-James v.,Centrum,,,,45
-Sofia d.,Zuidoost,,,,6
-Mette d.,Oost,,,,34
-Liz S.,Weesp,,,,49
-Merel H.,Centrum,,,,53
-Lindsey D.,Zuid,,,,18
-Sebastiaan D.,Westpoort,,,,47
-Bram R.,Weesp,,,,33
-Lieke v.,Noord,,,,11
-Mike P.,Weesp,,,,50
-Kayleigh S.,Westpoort,,,,57
-Elena O.,Centrum,,,,13
-Isa v.,Zuidoost,,,,54
-Aylin S.,West,,,,24
-Maryam K.,Zuid,,,,15
-Mirte K.,Centrum,,,,18
-Ian J.,Zuidoost,,,,48
-Quinn H.,Oost,,,,32
-Sylvie J.,Westpoort,,,,55
-Britt B.,Zuid,,,,20
-Tristan v.,West,,,,37
-Felix R.,Weesp,,,,49
-Vincent N.,Zuidoost,,,,59
-Leah H.,Centrum,,,,37
-Zeynep v.,West,,,,27
-Ibrahim S.,Zuidoost,,,,16
-Fien B.,Noord,,,,38
-Amina J.,Zuidoost,,,,9
+ID,Buurt,Cholesterol_mmol_L,Bloeddruk_mmHg,Bloedsuiker_mmol_L,Actieve_minuten_per_dag
+#0001,Nieuw-West,4.8,121/79,5.2,26
+#0002,Noord,5.1,128/82,5.5,4
+#0003,Oost,4.3,118/76,4.9,23
+#0004,Westpoort,5.6,134/86,6.1,22
+#0005,Oost,6,142/91,6.8,10
+#0006,West,4.7,124/80,5,23
+#0007,West,5.3,130/84,5.8,12
+#0008,Noord,4.5,116/74,4.7,19
+#0009,Centrum,6.4,148/95,7.2,12
+#0010,Oost,5,126/81,5.4,19
+#0011,Weesp,4.9,123/78,5.1,28
+#0012,Noord,5.8,138/88,6.3,21
+#0013,Centrum,4.2,112/72,4.5,13
+#0014,Noord,5.4,132/85,5.9,27
+#0015,Oost,6.1,145/93,7,30
+#0016,Zuidoost,4.6,120/77,4.8,7
+#0017,Centrum,5.7,136/87,6.2,22
+#0018,Centrum,4.4,115/73,4.6,14
+#0019,Centrum,6.3,150/97,7.4,29
+#0020,Weesp,5.2,129/83,5.6,22
+#0021,Centrum,4.8,122/79,5,25
+#0022,Zuid,5.5,133/86,6,22
+#0023,Centrum,4.1,110/70,4.4,11
+#0024,Centrum,5.9,140/90,6.5,1
+#0025,Weesp,4.7,119/76,4.9,27
+#0026,Zuidoost,5.1,127/82,5.3,4
+#0027,Zuidoost,6.2,147/94,7.1,4
+#0028,Oost,4.5,117/75,4.7,7
+#0029,Weesp,5.6,135/87,6.1,26
+#0030,Zuid,4.9,124/80,5.2,16
+#0031,Weesp,6,143/92,6.9,26
+#0032,Zuidoost,4.3,114/72,4.5,15
+#0033,Westpoort,5.3,131/84,5.7,29
+#0034,Centrum,4.6,118/77,4.8,26
+#0035,Noord,6.5,152/98,7.5,11
+#0036,Zuid,5,125/81,5.4,29
+#0037,Zuid,4.8,121/78,5.1,13
+#0038,Nieuw-West,5.7,137/88,6.2,12
+#0039,Nieuw-West,4.2,111/71,4.4,18
+#0040,Centrum,6.1,146/93,7,3
+#0041,Noord,5.4,132/85,5.8,17
+#0042,Westpoort,4.7,120/76,4.9,18
+#0043,Zuidoost,5.8,139/89,6.4,20
+#0044,Zuid,4.4,116/74,4.6,1
+#0045,Centrum,6.3,149/96,7.3,16
+#0046,Centrum,5.1,128/82,5.5,15
+#0047,Nieuw-West,4.9,123/79,5.2,7
+#0048,Oost,5.5,134/86,6,3
+#0049,Oost,4.1,109/69,4.3,17
+#0050,Oost,6,141/91,6.7,15
+#0051,Noord,,,,3
+#0052,Westpoort,,,,30
+#0053,Centrum,,,,9
+#0054,Weesp,,,,27
+#0055,Zuidoost,,,,26
+#0056,Centrum,,,,8
+#0057,Noord,,,,11
+#0058,Zuidoost,,,,26
+#0059,Centrum,,,,9
+#0060,Zuid,,,,1
+#0061,Nieuw-West,,,,20
+#0062,Nieuw-West,,,,22
+#0063,Westpoort,,,,30
+#0064,Centrum,,,,8
+#0065,Zuid,,,,43
+#0066,Noord,,,,19
+#0067,Zuidoost,,,,57
+#0068,Centrum,,,,50
+#0069,Weesp,,,,6
+#0070,Westpoort,,,,29
+#0071,Noord,,,,2
+#0072,Noord,,,,17
+#0073,Centrum,,,,45
+#0074,Zuidoost,,,,6
+#0075,Oost,,,,34
+#0076,Weesp,,,,49
+#0077,Centrum,,,,53
+#0078,Zuid,,,,18
+#0079,Westpoort,,,,47
+#0080,Weesp,,,,33
+#0081,Noord,,,,11
+#0082,Weesp,,,,50
+#0083,Westpoort,,,,57
+#0084,Centrum,,,,13
+#0085,Zuidoost,,,,54
+#0086,West,,,,24
+#0087,Zuid,,,,15
+#0088,Centrum,,,,18
+#0089,Zuidoost,,,,48
+#0090,Oost,,,,32
+#0091,Westpoort,,,,55
+#0092,Zuid,,,,20
+#0093,West,,,,37
+#0094,Weesp,,,,49
+#0095,Zuidoost,,,,59
+#0096,Centrum,,,,37
+#0097,West,,,,27
+#0098,Zuidoost,,,,16
+#0099,Noord,,,,38
+#0100,Zuidoost,,,,9
