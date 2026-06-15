@@ -98,7 +98,12 @@ streamlit run app.py
 ```
 Druk op Enter.
 
-Het dashboard opent automatisch in je browser. Lukt dat niet, ga dan zelf naar `http://localhost:8501`.
+Het dashboard opent automatisch in je browser. Lukt dat niet, probeer:
+```text
+python -m streamlit run app.py
+```
+
+of ga dan zelf naar `http://localhost:8501`.
 
 > De Opdrachtprompt of Terminal moet open blijven zolang je het dashboard gebruikt. Sluit je het venster, dan stopt het dashboard.
 
@@ -337,8 +342,12 @@ streamlit run app.py
 
 The dashboard should open automatically in your browser.
 
-If it does not, open:
+If it does not try:
+```text
+python -m streamlit run app.py
+```
 
+or open:
 ```text
 http://localhost:8501
 ```
