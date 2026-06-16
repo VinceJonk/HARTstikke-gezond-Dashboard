@@ -262,7 +262,8 @@ Je kunt het dashboard automatisch laten starten zodra je inlogt op Windows, zoda
 
 > Je bent klaar om te beginnen! Heb je vragen, neem dan contact op met een Biomedisch-technologie student/IT-specialist bij HARTstikke gezond of stuur een e-mail naar: vince.jonk@hva.nl
 ---
-\n
+
+
 ## ENGLISH VERSION 
 
 A Streamlit dashboard for analyzing heart rate and movement data. Visualizes active minutes per day based on Dutch physical activity guidelines, with an interactive map of Amsterdam districts and a neighborhood comparison of health measurements.
