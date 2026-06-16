@@ -52,10 +52,11 @@ De mappenstructuur ziet er dan zo uit:
 hartstikke-gezond/
 ├── _pycache_/
 ├── Bestanden/
-│   └── jouw-meting.csv
+│   └── jouw-meting.csv <
 ├── BuurtData/
-    └── anonieme_buurtbewoners_gezondheid.csv
+    └── anonieme_buurtbewoners_gezondheid.csv <
 ├── pages/
+    └── kaart.py
 ├── app.py    <-- Hoofd app
 ├── data_utils.py
 ├── ecg_utils.py
