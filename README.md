@@ -221,6 +221,48 @@ Het CSV-bestand moet de volgende kolommen bevatten:
 
 ---
 
+## Geadvanceerde instellingen
+
+### Dashboard automatisch opstarten bij inloggen (Windows)
+
+Je kunt het dashboard automatisch laten starten zodra je inlogt op Windows, zodat je het niet handmatig hoeft op te starten.
+
+> **Belangrijk:** Zet de projectmap op je bureaublad. Het pad naar je bureaublad is altijd hetzelfde patroon: `C:\Users\JOUWGEBRUIKERSNAAM\Desktop\HARTstikke-gezond-Dashboard-main`
+
+**Stap 1 — Open de Taakplanner als administrator**
+1. Druk op `Win + S`, zoek op **Taakplanner**
+2. Klik rechts → **Als administrator uitvoeren**
+
+**Stap 2 — Maak een nieuwe taak aan**
+1. Klik rechts op **Taakplannerbibliotheek** → **Taak maken...**
+2. Geef de taak een naam, bijv. `Start Dashboard`
+3. Zorg dat onder **Security options** het volgende staat:
+   - Gebruikersaccount: jouw eigen gebruikersnaam
+   - **Run only when user is logged on** is aangevinkt
+   - **Run with highest privileges** is aangevinkt
+
+**Stap 3 — Stel de trigger in**
+1. Ga naar het tabblad **Triggers** → klik op **New...**
+2. Kies bij **Begin the task**: `At log on`
+3. Klik op **OK**
+
+**Stap 4 — Stel de actie in**
+1. Ga naar het tabblad **Actions** → klik op **New...**
+2. Vul in:
+   - **Program/script:** `cmd.exe`
+   - **Add arguments:** `/k "cd /d C:\Users\JOUWGEBRUIKERSNAAM\Desktop\HARTstikke-gezond-Dashboard-main && streamlit run app.py && timeout 3 && start chrome --start-fullscreen http://localhost:8501"`
+3. Vervang `JOUWGEBRUIKERSNAAM` door jouw Windows-gebruikersnaam.
+4. Klik op **OK**
+
+**Stap 5 — Sla op en test**
+1. Klik op **OK** om de taak op te slaan
+2. Test door rechts te klikken op de taak → **Run**
+
+> Het dashboard opent nu automatisch in Chrome in fullscreen zodra je inlogt. Als Chrome te snel opent voordat Streamlit klaar is, verhoog dan de `timeout 3` naar een hoger getal (bijv. `timeout 5`).
+
+Je bent klaar om te beginnen! Heb je vragen, neem dan contact op met een Biomedisch-technologie student/IT-specialist bij HARTstikke gezond of stuur een e-mail naar: vince.jonk@hva.nl
+---
+
 ## ENGLISH VERSION 
 
 A Streamlit dashboard for analyzing heart rate and movement data. Visualizes active minutes per day based on Dutch physical activity guidelines, with an interactive map of Amsterdam districts and a neighborhood comparison of health measurements.
@@ -482,3 +524,43 @@ The CSV file must contain the following columns:
 | Bloodpressure (diastolic) | < 80 mmHg | WHO |
 | Blood Glucose | 4,0 – 6,0 mmol/L | Diabetes Fonds |
 | Active Minutes per Day | 21 – 30 min/day | RIVM Beweegrichtlijnen |
+
+---
+
+## Advanced Settings
+### Automatically start the dashboard at login (Windows)
+You can configure the dashboard to start automatically when you log in to Windows, so you do not have to launch it manually.
+> **Important:** Place the project folder on your desktop. The path to your desktop always follows this pattern: `C:\Users\YOURUSERNAME\Desktop\HARTstikke-gezond-Dashboard-main`
+
+**Step 1 — Open Task Scheduler as administrator**
+1. Press `Win + S` and search for **Task Scheduler**
+2. Right-click → **Run as administrator**
+
+**Step 2 — Create a new task**
+1. Right-click **Task Scheduler Library** → **Create Task...**
+2. Give the task a name, for example `Start Dashboard`
+3. Under **Security options**, make sure the following is set:
+   - User account: your own username
+   - **Run only when user is logged on** is selected
+   - **Run with highest privileges** is checked
+
+**Step 3 — Set the trigger**
+1. Go to the **Triggers** tab → click **New...**
+2. Set **Begin the task** to: `At log on`
+3. Click **OK**
+
+**Step 4 — Set the action**
+1. Go to the **Actions** tab → click **New...**
+2. Fill in:
+   - **Program/script:** `cmd.exe`
+   - **Add arguments:** `/k "cd /d C:\Users\YOURUSERNAME\Desktop\HARTstikke-gezond-Dashboard-main && streamlit run app.py && timeout 3 && start chrome --start-fullscreen http://localhost:8501"`
+3. Replace `YOURUSERNAME` with your Windows username.
+4. Click **OK**
+
+**Step 5 — Save and test**
+1. Click **OK** to save the task
+2. Test it by right-clicking the task → **Run**
+
+> The dashboard will now open automatically in Chrome in fullscreen whenever you log in. If Chrome opens too quickly before Streamlit is ready, increase `timeout 3` to a higher number (e.g. `timeout 5`).
+
+Your all set, if you have any questions, please contact an Biomedical-engineering student/IT-specialist at HARTstikke gezond or reach out via email: vince.jonk@hva.nl
