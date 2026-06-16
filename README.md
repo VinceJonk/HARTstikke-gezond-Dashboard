@@ -50,12 +50,19 @@ In de projectmap staan twee mappen waar je bestanden in moet zetten:
 De mappenstructuur ziet er dan zo uit:
 ```
 hartstikke-gezond/
-├── app.py
-├── requirements.txt
+├── _pycache_/
 ├── Bestanden/
 │   └── jouw-meting.csv
-└── BuurtData/
+├──BuurtData/
     └── anonieme_buurtbewoners_gezondheid.csv
+├──pages/
+├── app.py    <-- Hoofd app
+├── data_utils.py
+├── ecg_utils.py
+├── health_utils.py
+├── README.md
+└── requirements.txt
+
 ```
 
 ---
