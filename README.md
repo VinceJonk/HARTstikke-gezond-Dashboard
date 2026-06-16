@@ -53,9 +53,9 @@ hartstikke-gezond/
 ├── _pycache_/
 ├── Bestanden/
 │   └── jouw-meting.csv
-├──BuurtData/
+├── BuurtData/
     └── anonieme_buurtbewoners_gezondheid.csv
-├──pages/
+├── pages/
 ├── app.py    <-- Hoofd app
 ├── data_utils.py
 ├── ecg_utils.py
@@ -283,18 +283,24 @@ Inside the project folder, there are two folders where you need to place files:
 Place your heart rate monitor CSV files here. These are the measurement files that can be selected in the dashboard.
 
 **`BuurtData/`**  
-Place the file `anonieme_buurtbewoners_gezondheid.csv` here. This file contains health data for each district.
+The file `anonieme_buurtbewoners_gezondheid.csv` is placed here. This file contains health data for each district. when new measurements are done, this is where the're placed
 
 The folder structure should look like this:
 
 ```text
 hartstikke-gezond/
-├── app.py
-├── requirements.txt
+├── _pycache_/
 ├── Bestanden/
-│   └── jouw-meting.csv
-└── BuurtData/
+│   └── your-measurements.csv
+├── BuurtData/
     └── anonieme_buurtbewoners_gezondheid.csv
+├── pages/
+├── app.py    <-- Main app
+├── data_utils.py
+├── ecg_utils.py
+├── health_utils.py
+├── README.md
+└── requirements.txt
 ```
 
 ---
