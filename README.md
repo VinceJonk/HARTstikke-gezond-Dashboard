@@ -260,7 +260,7 @@ Je kunt het dashboard automatisch laten starten zodra je inlogt op Windows, zoda
 
 > Het dashboard opent nu automatisch in Chrome in fullscreen zodra je inlogt. Als Chrome te snel opent voordat Streamlit klaar is, verhoog dan de `timeout 3` naar een hoger getal (bijv. `timeout 5`).
 
->> Je bent klaar om te beginnen! Heb je vragen, neem dan contact op met een Biomedisch-technologie student/IT-specialist bij HARTstikke gezond of stuur een e-mail naar: vince.jonk@hva.nl
+> Je bent klaar om te beginnen! Heb je vragen, neem dan contact op met een Biomedisch-technologie student/IT-specialist bij HARTstikke gezond of stuur een e-mail naar: vince.jonk@hva.nl
 ---
 
 ## ENGLISH VERSION 
@@ -563,4 +563,4 @@ You can configure the dashboard to start automatically when you log in to Window
 
 > The dashboard will now open automatically in Chrome in fullscreen whenever you log in. If Chrome opens too quickly before Streamlit is ready, increase `timeout 3` to a higher number (e.g. `timeout 5`).
 
-Your all set, if you have any questions, please contact an Biomedical-engineering student/IT-specialist at HARTstikke gezond or reach out via email: vince.jonk@hva.nl
+> Your all set, if you have any questions, please contact an Biomedical-engineering student/IT-specialist at HARTstikke gezond or reach out via email: vince.jonk@hva.nl
