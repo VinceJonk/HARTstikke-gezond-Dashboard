@@ -8,7 +8,7 @@ Streamlit-dashboard voor analyse van hartslag- en bewegingsdata. Visualiseert ac
 
 ## Installatie
 
-Volg de stappen hieronder. Je hebt geen technische kennis nodig.
+Volg de stappen hieronder.
 
 ---
 
