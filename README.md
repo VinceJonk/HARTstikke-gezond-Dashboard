@@ -45,7 +45,7 @@ In de projectmap staan twee mappen waar je bestanden in moet zetten:
 
 **`Bestanden/`** — Zet hier je CSV-bestanden van de hartslagmeter in. Dit zijn de meetbestanden die je in het dashboard kunt selecteren.
 
-**`BuurtData/`** — Zet hier het bestand `anonieme_buurtbewoners_gezondheid.csv` in. Dit bestand bevat de gezondheidsgegevens per stadsdeel.
+**`BuurtData/`** — Hier staat het bestand `anonieme_buurtbewoners_gezondheid.csv` in. Dit bestand bevat de gezondheidsgegevens per stadsdeel, deze kan aangepast worden als er metingen gedaan zijn.
 
 De mappenstructuur ziet er dan zo uit:
 ```
