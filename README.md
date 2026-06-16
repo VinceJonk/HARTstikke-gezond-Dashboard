@@ -292,10 +292,11 @@ The folder structure should look like this:
 hartstikke-gezond/
 ├── _pycache_/
 ├── Bestanden/
-│   └── your-measurements.csv
+│   └── your-measurements.csv <
 ├── BuurtData/
-    └── anonieme_buurtbewoners_gezondheid.csv
+    └── anonieme_buurtbewoners_gezondheid.csv <
 ├── pages/
+    └── kaart.py
 ├── app.py    <-- Main app
 ├── data_utils.py
 ├── ecg_utils.py
