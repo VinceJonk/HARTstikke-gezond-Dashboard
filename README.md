@@ -72,7 +72,7 @@ hartstikke-gezond/
 
 **Windows:**
 1. Open de map `hartstikke-gezond` in Verkenner.
-2. Klik in de adresbalk bovenaan, typ `cmd` en druk op Enter. Er opent een Opdrachtprompt in de juiste map.
+2. Klik in de adresbalk bovenaan, typ `powershell` en druk op Enter. Er opent een Opdrachtprompt in de juiste map.
 3. Typ het volgende en druk op Enter:
    ```
    pip install -r requirements.txt
@@ -355,7 +355,7 @@ hartstikke-gezond/
 #### Windows
 
 1. Open the `hartstikke-gezond` folder in File Explorer.
-2. Click the address bar, type `cmd`, and press Enter.
+2. Click the address bar, type `powershell`, and press Enter.
 3. A Command Prompt window will open in the correct folder.
 4. Run:
 
